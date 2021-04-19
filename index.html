@@ -9,6 +9,11 @@
     <meta charset="utf-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" media="all" />
     <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
 </head>
@@ -38,8 +43,8 @@
             <h2>CLASSIFICAÇÃO DOS EQUIPAMENTOS - RDC ANVISA nº 02</h2>
         </div>
     </header>
-    <div class="mainContent">
-        <div class="center">
+    <div class="container">
+        <div class="center d-none d-lg-block">
             <div id="panles">
                 <div class="panelHolder active">
                     <div class="contentHolder">
@@ -50,7 +55,7 @@
                             <div class="model">
                                 <h1>Equipamento de saúde</h1>
                                 <p>Conjunto de aparelhos e máquinas, suas partes e acessórios utilizados por um estabelecimento de saúde onde são desenvolvidas ações de diagnose, terapia e monitoramento. São considerados equipamentos de saúde os equipamentos de apoio, os de infraestrutura, os gerais e os médico assistenciais;</p>
-                                <img src="img/sala.png" alt="Tomografia" height="300">
+                                <img src="img/sala.png" alt="Sala de cirurgia" height="300">
                             </div>
                         </a>
                     </div>
@@ -64,7 +69,7 @@
                             <div class="model">
                                 <h1>Equipamento de apoio</h1>
                                 <p>Equipamento ou sistema inclusive acessório e periférico que compõe uma unidade funcional, com características de apoio à área assistencial. São considerados equipamentos de apoio: cabine de segurança biológica, destilador, deionizador, liquidificador, batedeira, banho-maria, balanças, refrigerador, autoclave, dentre outros;</p>
-                                <img src="img/autoclave.png" alt="Desfibrilador" height="200">
+                                <img src="img/autoclave.png" alt="Autoclave" height="200">
                             </div>
                         </a>
                     </div>
@@ -78,7 +83,7 @@
                             <div class="model">
                                 <h1>Equipamento de infraestrutura</h1>
                                 <p>Equipamento ou sistema inclusive acessório e periférico que compõe as instalações elétrica, eletrônica, hidráulica, fluido-mecânica ou de climatização, de circulação vertical destinadas a dar suporte ao funcionamento adequado das unidades assistenciais e aos setores de apoio;</p>
-                                <img src="img/central.png" alt="Cadeira de rodas" height="300">
+                                <img src="img/central.png" alt="Central de infraestrutura" height="300">
                             </div>
                         </a>
                     </div>
@@ -92,7 +97,7 @@
                             <div class="model">
                                 <h1>Equipamentos gerais</h1>
                                 <p>Equipamentos gerais: conjunto de móveis e utensílios com características de uso geral, e não específico, da área hospitalar. São considerados equipamentos gerais: mobiliário, máquinas de escritório, sistema de processamento de dados, sistema de telefonia, sistema de prevenção contra incêndio, dentre outros; Fonte (RDCnº2 de 2010)</p>
-                                <img src="img/central.png" alt="Cadeira de rodas" height="300">
+                                <img src="img/computador_impressora.jpeg" alt="Equipamentos gerais" height="300">
                             </div>
                         </a>
                     </div>
@@ -107,14 +112,95 @@
                             <div class="model">
                                 <h1>Equipamento médico-assistencial</h1>
                                 <p>Equipamento ou sistema, inclusive seus acessórios e partes, de uso ou aplicação médica, odontológica ou laboratorial, utilizado direta ou indiretamente para diagnóstico, terapia e monitoração na assistência à saúde da população, e que não utiliza meio farmacológico, imunológico ou metabólico para realizar sua principal função em seres humanos, podendo, entretanto, ser auxiliado em suas funções por tais meios.</p>
-                                <img src="img/diagnostico.png" alt="Mesa cirúrgica" height="200">
+                                <img src="img/diagnostico.png" alt="Máquina de tomografia" height="200">
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="d-lg-none">
+            <div class="accordion" id="accordionMobile">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        EQUIPAMENTO DE SAÚDE
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionMobile">
+                    <div class="card-body">
+                        <p>Conjunto de aparelhos e máquinas, suas partes e acessórios utilizados por um estabelecimento de saúde onde são desenvolvidas ações de diagnose, terapia e monitoramento. São considerados equipamentos de saúde os equipamentos de apoio, os de infraestrutura, os gerais e os médico assistenciais;</p>
+                        <img src="img/sala.png" alt="Sala de cirurgia" height="300">
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        EQUIPAMENTO DE APOIO
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionMobile">
+                    <div class="card-body">
+                        <p>Equipamento ou sistema inclusive acessório e periférico que compõe uma unidade funcional, com características de apoio à área assistencial. São considerados equipamentos de apoio: cabine de segurança biológica, destilador, deionizador, liquidificador, batedeira, banho-maria, balanças, refrigerador, autoclave, dentre outros;</p>
+                        <img src="img/autoclave.png" alt="Autoclave" height="200">
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        EQUIPAMENTO DE INFRAESTRUTURA
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionMobile">
+                    <div class="card-body">
+                        <p>Equipamento ou sistema inclusive acessório e periférico que compõe as instalações elétrica, eletrônica, hidráulica, fluido-mecânica ou de climatização, de circulação vertical destinadas a dar suporte ao funcionamento adequado das unidades assistenciais e aos setores de apoio;</p>
+                        <img src="img/central.png" alt="Central de infraestrutura" height="300">
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        EQUIPAMENTOS GERAIS
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionMobile">
+                    <div class="card-body">
+                        <p>Equipamentos gerais: conjunto de móveis e utensílios com características de uso geral, e não específico, da área hospitalar. São considerados equipamentos gerais: mobiliário, máquinas de escritório, sistema de processamento de dados, sistema de telefonia, sistema de prevenção contra incêndio, dentre outros; Fonte (RDCnº2 de 2010)</p>
+                        <img src="img/computador_impressora.jpeg" alt="Equipamentos gerais" height="300">
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        EQUIPAMENTO MÉDICO-ASSISTENCIAL
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionMobile">
+                    <div class="card-body">
+                        <p>Equipamento ou sistema, inclusive seus acessórios e partes, de uso ou aplicação médica, odontológica ou laboratorial, utilizado direta ou indiretamente para diagnóstico, terapia e monitoração na assistência à saúde da população, e que não utiliza meio farmacológico, imunológico ou metabólico para realizar sua principal função em seres humanos, podendo, entretanto, ser auxiliado em suas funções por tais meios.</p>
+                        <img src="img/diagnostico.png" alt="Máquina de tomografia" height="200">
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
     </div>
+    
     <div id="footer">
         <div class="container">
             <img src="img/logo-sedis.png" alt="SEDIS">
@@ -123,6 +209,8 @@
             <img src="img/min-saude.png" alt="Ministério da saúde">
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.15.1/TweenMax.min.js"></script>
     <script type="text/javascript" src="scripts/slideOut.js"></script>

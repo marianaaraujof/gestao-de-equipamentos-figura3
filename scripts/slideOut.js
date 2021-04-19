@@ -1,5 +1,11 @@
 /*jslint browser: true*/
 /*global $, jQuery, TweenMax*/
+$(function(){
+
+    $('.collapse').collapse();
+  
+});
+
 
 (function ($) {
     'use strict';
@@ -274,3 +280,4 @@
 }(jQuery));
 
 $('#panles').slideOut();
+
